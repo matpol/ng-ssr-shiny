@@ -1,0 +1,7 @@
+<ng-container *ngIf="result$ | async as result">
+  <div class="row">
+    <div class="col-4 mb-4" *ngFor="let i of result.item">
+      <app-card [content]="i"></app-card>
+    </div>
+  </div>
+</ng-container>

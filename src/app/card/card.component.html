@@ -1,0 +1,15 @@
+<div class="card">
+  <a [routerLink]="['/', 'article', content.uri]"
+    ><img
+      src="https://picsum.photos/seed/{{ content.uri }}/320/140"
+      class="card-img-top img-fluid"
+  /></a>
+  <div class="card-body">
+    <h5 class="card-title">{{ content.headline }}</h5>
+  </div>
+  <div class="card-footer text-muted text-end">
+    <a [routerLink]="['/', 'article', content.uri]" class="btn btn-link"
+      >Read More</a
+    >
+  </div>
+</div>
